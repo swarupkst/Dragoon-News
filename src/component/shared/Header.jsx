@@ -1,9 +1,15 @@
 import React from 'react'
+import logo from '../../assets/logo.png'
+import Image from 'next/image'
+import { format, compareAsc } from "date-fns";
+
 
 const Header = () => {
   return (
-    <div>
-      <h2>Header</h2>
+    <div className='text-center py-8 p-y-7'>
+      <Image src={logo} width={300} height={200} alt="logo" className='mx-auto'/>
+    <p>Journalism Without Fear of Favour</p>
+    <p>{format(new Date(), "EEEE , MMM dd, yyyy")}</p>
     </div>
   )
 }
