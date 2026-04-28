@@ -6,7 +6,7 @@ import { format, compareAsc } from "date-fns";
 
 const Header = () => {
   return (
-    <div className='text-center py-8 p-y-7'>
+    <div className='text-center py-8 space-y-2'>
       <Image src={logo} width={300} height={200} alt="logo" className='mx-auto'/>
     <p>Journalism Without Fear of Favour</p>
     <p>{format(new Date(), "EEEE , MMM dd, yyyy")}</p>
